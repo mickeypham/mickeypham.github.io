@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" style="color-scheme: dark;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENG2003 Term Project 2 | Communication Portfolio by Quoc-An Pham</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://images.vexels.com/media/users/3/326607/isolated/preview/9e5660cb0cfab29920c1ce383c6d016c-neon-letter-q.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Font: Bitcount Prop Single -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single&family=Prata&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+    <style>
+        /* Basic theme setup to match the original */
+        body {
+            font-family: 'Prata', serif;
+            background-color: #260A33 !important; /* Dark purple background */
+            color: #d1d5db; /* gray-300 */
+        }
+
+        /* Keep headings in the pixel font */
+        h1, h2 {
+            font-family: 'Bitcount Prop Single', sans-serif;
+        }
+
+        /* Defines the keyframes for the gradient's continuous scroll */
+        @keyframes gradient-animation {
+            from {
+                background-position: 0% center;
+            }
+            to {
+                background-position: -200% center;
+            }
+        }
+
+        /* This class applies the animation to your text */
+        .animate-gradient {
+            animation: gradient-animation 4s linear infinite;
+        }
+
+        /* Glow effect for the text */
+        @keyframes text-glow {
+            0%, 100% {
+                text-shadow: 
+                0 0 15px rgba(251, 113, 133, 0.5),
+                0 0 25px rgba(251, 146, 60, 0.4),
+                0 0 35px rgba(163, 230, 53, 0.3);
+            }
+            50% {
+                text-shadow: 
+                0 0 25px rgba(251, 113, 133, 0.8),
+                0 0 40px rgba(251, 146, 60, 0.6),
+                0 0 55px rgba(163, 230, 53, 0.5);
+            }
+        }
+
+        .animate-glow {
+            animation: text-glow 3s ease-in-out infinite;
+        }
+
+        /* Replicating custom colors with standard Tailwind equivalents */
+        .bg-primary { background-color: #4f46e5; }
+        .hover\:bg-primary\/90:hover { background-color: #4338ca; }
+        .text-primary { color: #818cf8; }
+        .text-primary-foreground { color: #f9fafb; }
+        .bg-background\/80 { background-color: rgba(38, 10, 51, 0.8); }
+        .bg-card { background-color: #2a1b4a; }
+        .border-b { border-color: #4a3371; }
+        .border { border-color: #4a3371; }
+        .border-card { border-color: #4a3371; }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .font-special-gothic {
+            font-family: 'Special Gothic Expanded One', sans-serif;
+        }
+    </style>
+</head>
+<body class="text-gray-300">
+
+    <div style="display: contents">
+        <!-- Background Gradients and Pattern -->
+        <div class="fixed inset-0 w-full h-screen -z-10" style="background: linear-gradient(to bottom, #260A33, #1a0629);">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px); background-size: 40px 40px;"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-purple-950 via-transparent to-transparent opacity-70"></div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center">
+                        <a href="#" class="mr-4">
+                           <img src="https://images.vexels.com/media/users/3/326607/isolated/preview/9e5660cb0cfab29920c1ce383c6d016c-neon-letter-q.png" alt="q" class="h-12 w-auto">
+                        </a>
+                        <span class="text-white text-lg font-semibold">ENG2003 Term Project 2 - Communication Portfolio</span>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-6">
+                        <a href="#projects" class="text-gray-300 hover:text-primary transition-colors">Showcase</a>
+                        <a href="#reflection" class="text-gray-300 hover:text-primary transition-colors">Reflection</a>
+                        <a href="#about" class="text-gray-300 hover:text-primary transition-colors">About Me</a>
+                        <a href="#contact" class="text-gray-300 hover:text-primary transition-colors">LinkedIn</a>
+                    </div>
+                    <div class="md:hidden">
+                        <button class="text-gray-200 hover:text-primary transition-colors">
+                            <svg width="24" height="24" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="relative min-h-screen pt-16">
+            <div class="container mx-auto px-4">
+
+                <!-- Hero Section -->
+                <section class="flex flex-col-reverse lg:flex-row items-center justify-center gap-12 min-h-[calc(80vh-4rem)] pt-4 pb-8 text-center">
+                    <div class="flex flex-col max-w-4xl lg:max-w-5xl">
+                        <h1 class="text-white text-3xl md:text-5xl font-bold mb-2">Personal Portfolio</h1>
+                        
+                        <h1 class="
+                            animate-gradient
+                            text-8xl 
+                            font-bold 
+                            bg-clip-text 
+                            text-transparent 
+                            bg-[linear-gradient(to_right,#c81d77,#6710c2,#c81d77)] 
+                            bg-[length:200%_auto]
+                            leading-tight 
+                            pb-6
+                        " style="font-family: 'Prata', serif;"> 
+                            Quốc-An Phạm
+                        </h1>
+
+                        <p class="text-base md:text-lg lg:text-xl text-gray-300/90">
+                            Hi there! I'm currently a second-year computer engineering student at York University, welcome to my portfolio! Here, you'll find a showcase of my projects and reflections, as well as my LinkedIn profile and contact information.
+                        </p>
+                        
+                        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+                            <a href="https://www.linkedin.com/in/mickey-pham/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors h-10 border border-purple-600 bg-purple-700 hover:bg-purple-800 hover:text-white text-lg p-6 text-white">
+                                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                Connect on LinkedIn
+                            </a>
+                            <a href="https://github.com/mickeypham" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors h-10 border border-gray-600 bg-gray-700 hover:bg-gray-800 hover:text-white text-lg p-6 text-white">
+                                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                Explore my work on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects Section -->
+                <section id="projects" class="py-12">
+                    <h2 class="text-4xl font-bold text-center mb-12 text-white">Showcase (Links in the photos)</h2>
+                    <div class="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                        
+                        <!-- Project Card 1 -->
+                        <div class="bg-card text-card-foreground rounded-lg border border-card shadow-lg flex flex-col">
+                            <div class="rounded-t-lg w-full aspect-[3/4] bg-gray-100 p-4 flex items-center justify-center">
+                                <a href="https://drive.google.com/file/d/1wyLZupuygMGOSNmCogoHOI-AnZc_UwPW/view" target="_blank" rel="noopener noreferrer" class="max-w-full max-h-full flex items-center justify-center">
+                                    <img src="https://raw.githubusercontent.com/mickeypham/mickeypham.github.io/refs/heads/main/Pham_Quoc-An_assignment1_eng2003.png" alt="ENG2003 Cover Letter" class="max-w-full max-h-full object-contain hover:opacity-80 transition-opacity cursor-pointer">
+                                </a>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-semibold leading-none tracking-tight text-white mb-2">ENG2003 Cover Letter</h3>
+                                <p class="text-sm flex-grow">I chose this piece to reflect on my communication skills because it shows my ability to communicate professionally in a real-world context. Writing a cover letter for an actual mechanical engineering company taught me how personal branding and audience targeting can intersect, because it’s always easy to talk about yourself, but hard to do so strategically, and clearly. This assignment reflected major growth in tone and purpose, I realized how important it is to anticipate what the employer cares about, and to present myself not just as a student, but as a potential team member. It taught me how to use enthusiasm and professionalism together, which was slightly outside my comfort zone for writing as I have very limited experience with this type of writing. I think this is one of my best works, as it’s solid and written pretty well, and I’d like to keep refining the phrasing and add a few stronger examples of my experience, but overall, it represents a valuable skill in my professional communication toolkit.</p>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2 -->
+                        <div class="bg-card text-card-foreground rounded-lg border border-card shadow-lg flex flex-col">
+                            <div class="rounded-t-lg w-full aspect-[3/4] bg-gray-100 p-4 flex items-center justify-center">
+                                <a href="https://drive.google.com/file/d/1wGn-zubprESIzSu5luqSFiOFjHRPhYCC/view" target="_blank" rel="noopener noreferrer" class="max-w-full max-h-full flex items-center justify-center">
+                                    <img src="https://raw.githubusercontent.com/mickeypham/mickeypham.github.io/refs/heads/main/bro%20sure.png" alt="ENG2003 Brochure" class="max-w-full max-h-full object-contain hover:opacity-80 transition-opacity cursor-pointer">
+                                </a>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-semibold leading-none tracking-tight text-white mb-2">ENG2003 Brochure</h3>
+                                <p class="text-sm flex-grow">I selected this piece because it captures a complex global issue, antibiotic resistance, and breaks it down visually and clearly for both a general high-school level audience, as well as a highly educated technical audience, showcasing my development as a flexible communicator. I had to practice audience analysis in real time, what do teenagers know, and what could I tell them so that they can understand the dangers of AMR? How would researchers compare therapeutic strategies without overwhelming the readers? I used tiered vocabulary to target two audiences through two different brochures, one targeted at high school students that used lower-level terminology, and one that was a lot more technical, for the educated researchers who might be more interested in the details rather than the issue. Creating this piece forced me to synthesize dense microbiology content and completely reframe it for two different audiences with vastly different needs and literacy levels. It pushed me out of my comfort zone, because I was more familiar with long-form writing for only one audience at once, but this assignment made me think about the words I was using more, and the way I presented information to adapt to the audience better. I think it is some of my best work, and I’m proud of the clarity and purpose of each section, however I would improve the layout and design further, but overall the communication is strong, effective, and tailored, which is a skill I would continue to develop as I go through my career.</p>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3 -->
+                        <div class="bg-card text-card-foreground rounded-lg border border-card shadow-lg flex flex-col">
+                            <div class="rounded-t-lg w-full aspect-[3/4] bg-gray-100 p-4 flex items-center justify-center">
+                                <a href="https://drive.google.com/file/d/1A5EiJTFRQEivwfW0YIJLtkBGHjLmMfIO/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="max-w-full max-h-full flex items-center justify-center">
+                                    <img src="https://raw.githubusercontent.com/mickeypham/mickeypham.github.io/refs/heads/main/Pham_Quoc-An_TermProject1Final_ENG2003.png" alt="ENG2003 Term Project 1 Report" class="max-w-full max-h-full object-contain hover:opacity-80 transition-opacity cursor-pointer">
+                                </a>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-semibold leading-none tracking-tight text-white mb-2">ENG2003 Term Project 1 Report</h3>
+                                <p class="text-sm flex-grow">For the ENG2003 course, I wrote a technical report that covered a dual approach to combating multidrug-resistant bacteria, or MDRs. I decided to pick it because it was some of the most demanding work I completed academically ever, as it pushed me to develop my skills in writing effectively, and communicate a complex topic for a non-technical general audience. The report covered the two methods, bacteriophage therapy, and artificial intelligence-driven antibiotic discovery, while integrating peer-reviewed sources to maintain accuracy throughout all my statements. I practiced audience adaptation by applying the 7 C’s and revising sections multiple times for clarity, while still preserving the scientific integrity. The paper demonstrates my ability to research using online resources, validate their credibility, and then use the sources effectively to communicate clearly in a structured technical report, showcasing my growth and progress as a writer, and marks a major step in my writing and communication journey.</p>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 4 -->
+                        <div class="bg-card text-card-foreground rounded-lg border border-card shadow-lg flex flex-col">
+                            <div class="rounded-t-lg w-full aspect-[4/3] bg-gray-100 p-4 flex items-center justify-center">
+                                <a href="https://drive.google.com/file/d/16lRclGdukiIebDXN_ALKqmLXa9C9h_eR/view" target="_blank" rel="noopener noreferrer" class="max-w-full max-h-full flex items-center justify-center">
+                                    <img src="https://raw.githubusercontent.com/mickeypham/mickeypham.github.io/refs/heads/main/term%20project%202%20files/Quoc-An%20Pham%20ENG2001%20Final%20Project.png" alt="ENG2001 Final Project" class="max-w-full max-h-full object-contain hover:opacity-80 transition-opacity cursor-pointer">
+                                </a>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-semibold leading-none tracking-tight text-white mb-2">ENG2001 Final Project</h3>
+                                <p class="text-sm flex-grow">I picked this project for my portfolio because it demonstrates the full scope of my project management capabilities, from the ideation and planning, to budgeting and stakeholder coordination. The deliverable was a comprehensive business case for a potential startup app called CreationBox, which would sell DIY craft kits through an e-commerce platform backed with instructional content and influencer engagement. The project pushed me to balance creativity with structure, I wasn’t just pitching a product, I had to forecast supply chains, estimate return on income, analyze risk, and plan every milestone from prototype to launch. I learned how much groundwork goes into even a modest minimum viable product release, where every design choice I made had financial implications, and every delay would introduce new risks. This project stands out from the others because it solidified my confidence in leading tech-centered entrepreneurial initiatives, and pushed me outside of my comfort zone by forcing me to think from multiple different perspectives for the stakeholder management strategies to ensure that everyone would benefit from the project, it stands out to me because it shows my development as a communicator from writing stories in English class, to writing technical documents in an engineering context, showing my flexibility, and adaptability.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- About Section -->
+                <section id="reflection" class="py-24">
+                    <h2 class="text-4xl font-bold text-center mb-12 text-white">Reflection</h2>
+                    <div class="max-w-4xl mx-auto">
+                        <div class="text-lg text-gray-300/90 space-y-6">
+                            <p>Part 1: Experience with ENG2003</p>
+                                <p>During my time in ENG2003, I had a surprisingly rewarding experience, even though I wasn’t expecting communication and writing to have such a major role in the engineering field. At first, I thought this course was more about grammar and formatting, but since Microsoft word and Google docs can all do that for us now, it focused on way more strategic and creative methods, which I thought was great. The assignments pushed me to think like a designer, not just a writer, and helped me develop skills that would actually help me in the real-world, rather than doing things that would be more fit for a high school English class. I found that the most useful portions were the group projects and group work, because they encouraged us to develop effective communication skills which we would be able to transfer to the workplace. The 7 C’s; clarity, conciseness, concreteness, correctness, coherence, completeness, and courtesy, were particularly useful in guiding my approach to writing, and they encourage good writing practices to help me convey my ideas in the most effective ways. Understanding this helped me become more aware of the impact that better communication skills would have while working with others, both verbally and linguistically, but also non-verbally and subconsciously. Learning how to create effective technical reports and presentations will be a skill that I will use throughout the rest of my career, so having a good foundation and understanding of it from ENG2003 will ensure that my reports and presentations will be effective and leave a lasting impact on the audience.</p>
+                            <p>Part 2: My growth and development as a communicator</p>
+                            <p>When I started ENG2003, I was still starting to hone my skills as a communicator, I had the spelling and grammar down from the start, but I wasn’t the most confident speaker in presentations, my communication skills were way better through text or email, or any other written formats. My speaking and presentation skills improved the most throughout ENG2003, especially after learning the STAR method, which helps me cover the most important things; the situation at hand, the task I was given, the action that I did, and the result I got, which helped me stop myself from going on and on while speaking without the audience understanding anything. The 7 C’s remind me to be concise, even while speaking, so using filler words and filler sounds just adds time and words to a presentation or speech, while adding no useful information for the audience, creating word fatigue. One thing I’m still working on while speaking is the pacing, as sometimes I can go too fast, causing the audience to lose track of what I’m talking about, or even losing track of my original point myself, so I’m working on slowing down my pace to sound more confident, while also keeping the audience more engaged with the main idea.
+</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- About Me Section -->
+                <section id="about" class="py-24">
+                    <h2 class="text-4xl font-bold text-center mb-12 text-white">About Me (Uniquely Tailored) </h2>
+                    <div class="max-w-4xl mx-auto">
+                        <!-- Photo Gallery -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                            <div class="rounded-lg overflow-hidden shadow-lg">
+                                <img src="https://drive.google.com/thumbnail?id=1jAYI7yq0JLUud6A--MMWQY6QO5j2WGhN&sz=w400" alt="Photography Work 1" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <div class="rounded-lg overflow-hidden shadow-lg">
+                                <img src="https://drive.google.com/thumbnail?id=1pAlQAxzqkjyUbwLAyHlemnaCP1qy6Fp-&sz=w400" alt="Photography Work 2" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <div class="rounded-lg overflow-hidden shadow-lg">
+                                <img src="https://drive.google.com/thumbnail?id=1predqrwsuiVJHT7v4SFzq1pImZFS_hN7&sz=w400" alt="Photography Work 3" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                            </div>
+                        </div>
+                        <div class="text-lg text-gray-300/90 space-y-6">
+                            <p>Hello! I'm Quoc-An (Mickey) Pham. I'm currently a second-year Computer Engineering student at York University, passionate about technology and its potential to solve real-world problems. My academic journey has been focused on developing both technical skills and effective communication abilities that are essential in the engineering field. During my free time, I enjoy photography, I enjoy it as an art form, freezing a moment in time, framing a story, paying attention to details, and communicating a message visually. Photography trains the eye to notice fine details, the small shifts in composition, the way colors interact, or the lines that intersect, and this transfers into engineering, because it plays a role in catching design flaws early, reviewing drawings and models with precision, and noticing issues in prototypes that others might overlook. Framing a compelling image also requires balancing elements, and guiding the viewer’s eye, principles which can be applied to engineering diagrams and technical schematics. Photography also comes with its own set of challenges, low-light conditions, bad weather, and moving subjects all require creative solutions, adjusting the aperture, changing perspectives, or adapting on the fly. In engineering, projects face similar challenges, working within budget constraints, regulatory limitations, and environmental factors while still producing effective solutions. My photography practice sharpens both my technical and creative thinking, strengthening my ability to observe, adapt, and communicate, which are all vital in engineering work as well, whether I’m refining a CAD model, writing a technical report, or explaining a concept to a client. </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Final CTA -->
+                <section id="contact" class="py-24 text-center">
+                    <h2 class="text-3xl font-bold text-white mb-4">Contact Me</h2>
+                    <p class="max-w-3xl mx-auto mb-8">I'm always interested in discussing new opportunities, collaborations, or simply connecting with fellow developers. Feel free to reach out to me at <a href="mailto:quocan@my.yorku.ca" class="text-blue-400 hover:text-blue-300 underline">quocan@my.yorku.ca</a> or connect with me on LinkedIn below.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <a href="https://www.linkedin.com/in/mickey-pham/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors h-10 border border-blue-600 bg-blue-700 hover:bg-blue-800 hover:text-white text-lg p-6 text-white">
+                            <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            Connect on LinkedIn
+                        </a>
+                    </div>
+                </section>
+                
+                <!-- Additional bottom spacing for proper viewport centering -->
+                <div class="h-96"></div>
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="border-t border-purple-700 bg-purple-900/50 backdrop-blur-sm">
+            <div class="container mx-auto px-4 py-4">
+                <div class="flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400">
+                    <div class="mb-2 sm:mb-0">
+                        © 2025 Quoc-An Pham
+                    </div>
+                    <div>
+                        4700 Keele St, North York, ON M3J 1P3
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
